@@ -34,8 +34,8 @@ class NavBar extends Component {
         <nav>
           <div className={styles.navLinks} id="nav-links">
             <p><a href="#schedule">Schedule</a></p>
-            <p><a href="#speakers">Speakers</a></p>
             <p><a href="#project">Project</a></p>
+            <p><a href="#speakers">Speakers</a></p>
           </div>
           <div className="burger" id="burger">
             <div className="line1"></div>

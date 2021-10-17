@@ -8,8 +8,11 @@ import gish from '../public/Gish.svg'
 import racho from '../public/Racho.svg'
 import jackson from '../public/Jackson.svg'
 import nyambe from '../public/Nyambe.svg'
+import nyambeBig from '../public/NyambeBig.png'
 import nguyen from '../public/Nguyen.svg'
+import nguyenBig from '../public/NguyenBig.png'
 import freeland from '../public/Freeland.svg'
+import freelandBig from '../public/FreelandBig.png'
 
 export default function Home() {
   return (
@@ -31,7 +34,7 @@ export default function Home() {
               <p>October 16 & 17 from 10:00am to 3:00pm PDT</p>
               <button id="schedule"><a href="https://stanford.zoom.us/meeting/register/tJAlduihrTIuEtwk4vBx-yBouu5X8JgiVGps" target="_blank" rel="noreferrer">Join Now!</a></button>
             </div>
-            <Image src="/logo.svg" height={375} width={375}/>
+            <Image src={logo} className={styles.logo}/>
           </div>
 
           <div className={styles.schedule}>
@@ -102,11 +105,11 @@ export default function Home() {
                 <h3>Catherine Freeland</h3>
                 <p>Hepatitis B Foundation</p>
               </div>
-              <p className={styles.times}>12:30pm - 1:00pm</p>
+              <p className={styles.times} id="project">12:30pm - 1:00pm</p>
             </div>
           </div>
 
-          <div className={styles.projectInfo} id="project">
+          <div className={styles.projectInfo}>
             <h2>Conference Project</h2>
             <div className={styles.projects}>
               <a href="https://rpark23.github.io/hepbapp/" target="_blank" rel="noreferrer">
