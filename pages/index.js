@@ -34,7 +34,9 @@ export default function Home() {
               <p>October 16 & 17 from 10:00am to 3:00pm PDT</p>
               <button id="schedule"><a href="https://stanford.zoom.us/meeting/register/tJAlduihrTIuEtwk4vBx-yBouu5X8JgiVGps" target="_blank" rel="noreferrer">Join Now!</a></button>
             </div>
-            <Image src={logo} className={styles.logo}/>
+            <div className={styles.logo}>
+              <Image src={logo}/>
+            </div>
           </div>
 
           <div className={styles.schedule}>
