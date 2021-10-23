@@ -1,8 +1,15 @@
 .navContainer {
-  min-height: 9vh;
-  position: absolute;
+  min-height: 8.8vh;
   top: 0;
   width: 100%;
+
+  @media screen and (max-width: 900px){
+    min-height: 8vh;
+  }
+
+  @media screen and (max-width: 600px){
+    min-height: 7vh;
+  }
 
   nav {
     align-items: center;
@@ -10,10 +17,18 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    height: 9vh;
+    height: 8.8vh;
     width: 100%;
     transition: 0.6s;
     z-index: 2;
+
+    @media screen and (max-width: 900px){
+      height: 8vh;
+    }
+
+    @media screen and (max-width: 600px){
+      height: 7vh;
+    }
 
     .navLinks {
       align-items: center;
@@ -21,6 +36,10 @@
       justify-content: space-around;
       width: 60%;
       z-index: 1;
+
+      @media screen and (max-width: 900px){
+        width: 80%;
+      }
     }
       
     .navLinks a {
@@ -29,13 +48,20 @@
       text-decoration: none;
       font-size: 3vh;
       padding: 0.5rem 1.5rem;
+
+      @media screen and (max-width: 900px){
+        font-size: 1.2rem;
+      }
+
+      @media screen and (max-width: 600px){
+        font-size: 1rem;
+      }
     }
 
     .navLinks a:hover {
       background-color: white;
       color: #38A2A6;
       min-height: 9vh;
-      //text-decoration: underline;
     }
     
     .navLinks h2 {

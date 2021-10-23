@@ -8,11 +8,11 @@ import gish from '../public/Gish.svg'
 import racho from '../public/Racho.svg'
 import jackson from '../public/Jackson.svg'
 import nyambe from '../public/Nyambe.svg'
-import nyambeBig from '../public/NyambeBig.png'
 import nguyen from '../public/Nguyen.svg'
-import nguyenBig from '../public/NguyenBig.png'
 import freeland from '../public/Freeland.svg'
-import freelandBig from '../public/FreelandBig.png'
+import cameroon from '../public/Cameroon.svg'
+import mongolia from '../public/Mongolia.svg'
+import logoThumbnail from '../public/logoThumbnail.svg'
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
                 The Post Pandemic Future <br/> of Global Health
               </h1>
               <p>October 16 & 17 from 10:00am to 3:00pm PDT</p>
-              <button id="schedule"><a href="https://stanford.zoom.us/meeting/register/tJAlduihrTIuEtwk4vBx-yBouu5X8JgiVGps" target="_blank" rel="noreferrer">Join Now!</a></button>
+              {/*<button id="schedule"><a href="https://stanford.zoom.us/meeting/register/tJAlduihrTIuEtwk4vBx-yBouu5X8JgiVGps" target="_blank" rel="noreferrer">Register</a></button>*/}
             </div>
             <div className={styles.logo}>
               <Image src={logo}/>
@@ -112,19 +112,37 @@ export default function Home() {
           </div>
 
           <div className={styles.projectInfo}>
-            <h2>Conference Project</h2>
+            <h2>Conference Projects</h2>
             <div className={styles.projects}>
-              <a href="https://rpark23.github.io/hepbapp/" target="_blank" rel="noreferrer">
+              <a href="https://docs.google.com/document/d/1QWUjq334mYuDk2QFQNttZZn2McalKmpI4nO3ZR4CZgg/edit?usp=sharing" target="_blank" rel="noreferrer">
                 <div className={styles.project}>
-                  <Image src={logo} />
-                  <h4>Hep B Quiz Game</h4>
+                  <div className={styles.thumbnail}>
+                    <Image className={styles.flag} src={mongolia} />
+                  </div>
+                  <p>Mongolia <br/> Brochure</p>
                 </div>
               </a>
-              <div className={styles.project}>
+              <a href="#cameroon" target="_blank" rel="noreferrer">
+                <div className={styles.project}>
+                  <div className={styles.thumbnail}>
+                    <Image className={styles.flag} src={cameroon} />
+                  </div>
+                  <p>Cameroon <br/> Presentation</p>
+                </div>
+              </a>
+              <a href="https://rpark23.github.io/hepbapp/" target="_blank" rel="noreferrer">
+                <div className={styles.project}>
+                  <div className={styles.thumbnail}>
+                    <Image src={logoThumbnail} />
+                  </div>
+                  <p>Sample Hep B <br/> Quiz Game</p>
+                </div>
+              </a>
+              {/*<div className={styles.project}>
                 <div className={styles.template}>
                   <h4>Your <br/> Project!</h4>
                 </div>
-              </div>
+  </div>*/}
             </div>
           </div>
         </main>

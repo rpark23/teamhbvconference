@@ -2,8 +2,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 9vh;
-  min-height: 91vh;
 }
 
 .main {
@@ -18,7 +16,7 @@
     background-color: #99DADD;
     display: flex;
     justify-content: center;
-    padding: 0.5rem 0 0.5rem 6rem;
+    padding: 0.5rem 0 0.5rem 5rem;
     text-align: center;
     width: 100%;
 
@@ -57,6 +55,10 @@
           font-size: 2.5rem;  
           margin-top: 1.2rem;
         }
+
+        @media screen and (max-width: 600px){
+          font-size: 2rem;  
+        }
       }
 
       p {
@@ -70,13 +72,13 @@
       }
 
       button {
-        background-color: black;
-        border-style: none;
-        color: white;
+        background-color: #49B8A9;
+        border-color: #49B8A9;
+        border-style: solid;
         border-radius: 10px;
-        border-width: 2px;
+        border-width: 1px;
         font-size: 1.5rem;
-        margin-top: 1.6rem;
+        margin-top: 2rem;
         padding: 0.5rem 1.5rem;
 
         @media screen and (max-width: 1200px){
@@ -89,15 +91,15 @@
           text-decoration: none;
         }
       }
-  
-      button:hover {
-        cursor: pointer;
-      }
+    }
+
+    .logo {
+      width: 300px;
     }
 
     @media screen and (max-width: 1200px){
       .logo {
-        width: 300px;
+        width: 250px;
       }
     }
 
@@ -120,7 +122,7 @@
 
     h2 {
       font-size: 2rem;
-      margin-top: 3rem;
+      margin-top: 2.2rem;
 
       @media screen and (max-width: 900px){
         margin-top: 2rem;
@@ -128,6 +130,7 @@
 
       @media screen and (max-width: 600px){
         font-size: 1.5rem;
+        margin-top: 1.5rem;
       }
     }
 
@@ -211,7 +214,7 @@
     width: 100%;
 
     @media screen and (max-width: 600px){
-      padding: 1rem;
+      padding: 1rem 0 1.5rem;
     }
 
     h2 {
@@ -253,16 +256,35 @@
       padding: 1rem;
       width: 11rem;
 
+      line-height: 1.2rem;
+
+      @media screen and (max-width: 900px){
+        font-size: 0.9rem;
+        height: 10rem;
+        width: 10rem;
+
+        line-height: 1rem;
+      }
+
       @media screen and (max-width: 600px){
-        margin-top: 0;
-        height: 9rem;
-        width: 9rem;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        height: 8rem;
+        width: 8rem;
       }
   
-      img {
-        height: 8rem;
+      .thumbnail {
+        width: 9rem;
+        padding: 0.3rem;
+        padding-bottom: 0.6rem;
+
+        @media screen and (max-width: 900px){
+          width: 8rem;
+        }
 
         @media screen and (max-width: 600px){
+          padding: 0;
+          padding-bottom: 0.3rem;
           width: 6rem;
         }
       }
